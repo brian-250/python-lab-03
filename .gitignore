@@ -1,5 +1,5 @@
 # Ignore Python cache file
-__pycache__
+__pycache__/
 
 # Ignore test text file
 test.txt
