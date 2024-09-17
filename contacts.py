@@ -80,13 +80,13 @@ def modify_contact(contacts, first_name, last_name, index):
     >>> modify_contact(contacts)
     contacts
     """
-    if index_modifier >= 0 and index_modifier < len(contacts):
+    if index >= 0 and index < len(contacts):
         first_name = input("Provide your first name: ")
         last_name = input("Provide your last name: ")
         full_name = []
         full_name.append(first_name)
         full_name.append(last_name)
-        contacts[index_modifier] = full_name
+        contacts[index] = full_name
     else:
         print("Invalid index number.")
     return contacts
