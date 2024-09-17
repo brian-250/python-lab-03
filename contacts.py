@@ -81,8 +81,6 @@ def modify_contact(contacts, first_name, last_name, index):
     contacts
     """
     if index >= 0 and index < len(contacts):
-        first_name = input("Provide your first name: ")
-        last_name = input("Provide your last name: ")
         full_name = []
         full_name.append(first_name)
         full_name.append(last_name)
