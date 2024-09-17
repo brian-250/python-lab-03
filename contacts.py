@@ -57,7 +57,7 @@ def add_contact(contacts, first_name, last_name):
     contacts.append(full_name)
     return contacts
 
-def modify_contact(contacts):
+def modify_contact(contacts, first_name, last_name, index):
     """
     Modifys the first and last name of an index in 'contacts'.
 

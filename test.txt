@@ -1,13 +1,4 @@
-EEEEEEE
-======================================================================
-ERROR: test_list_int (__main__.Test01_AddContact)
-*** Test01 *** Calling the 'add_contact' method passing a positional argument equal to [['Richard','Stallman']], a keyword argument first_name equal to 'Steve', and a keyword argument last_name equal to 'Jobs' should result in a contact list [['Richard','Stallman'],['Steve','Jobs']] ***
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/mnt/c/Users/brian/Documents/cpsc223p/lab3/test.py", line 14, in test_list_int
-    add_contact(contacts, first_name = "Steve", last_name = "Jobs")
-TypeError: add_contact() got an unexpected keyword argument 'first_name'
-
+.EEEEEE
 ======================================================================
 ERROR: test_list_int (__main__.Test02_ModifyContact)
 *** Test02 *** Calling the 'modify_contact' method passing a positional argument equal to [['Richard','Stallman'],['Bill','Gates']], a keyword argument first_name equal to 'Steve', a keyword argument last_name equal to 'Jobs', and a keyword argument index equal to '1' should result in a contact list [['Richard','Stallman'],['Steve','Jobs']] ***
@@ -63,6 +54,6 @@ Traceback (most recent call last):
 NameError: name 'sort_contacts' is not defined
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.010s
+Ran 7 tests in 0.006s
 
-FAILED (errors=7)
+FAILED (errors=6)
