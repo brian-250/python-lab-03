@@ -47,8 +47,6 @@ def add_contact(contacts, first_name, last_name):
     >>> add_contact(contacts)
     contacts
     """
-    first_name = input("Provide your first name: ")
-    last_name = input("Provide your last name: ")
     full_name = []
     full_name.append(first_name)
     full_name.append(last_name)
