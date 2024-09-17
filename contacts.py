@@ -30,7 +30,11 @@ def add_contact(contacts, first_name, last_name):
     Adds a new name to the 'contacts' list.
 
     Paramters:
-    contacts (2D list): Tuffy Titan's contacts list.
+    contacts (2D list, string, string): Tuffy Titan's contacts list.
+    first_name (string, string, string): The first name of the person added to
+                                         'contacts' list
+    last_name (string, string, string): The last name of the person added to
+                                         'contacts' list
 
     Methods:
     append():
@@ -44,7 +48,7 @@ def add_contact(contacts, first_name, last_name):
         2D list: Updated 'contacts' list.
 
     Example:
-    >>> add_contact(contacts)
+    >>> add_contact(contacts, first_name, last_name)
     contacts
     """
     full_name = []
