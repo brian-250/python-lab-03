@@ -80,7 +80,6 @@ def modify_contact(contacts, first_name, last_name, index):
     >>> modify_contact(contacts)
     contacts
     """
-    index_modifier = int(input("What index do you want to modify? "))
     if index_modifier >= 0 and index_modifier < len(contacts):
         first_name = input("Provide your first name: ")
         last_name = input("Provide your last name: ")
