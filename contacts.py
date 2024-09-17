@@ -25,7 +25,7 @@ def print_list(contacts):
         print(f'{str(index):8}{contacts[index][0]:22}{contacts[index][1]:22}')
     return contacts
 
-def add_contact(contacts):
+def add_contact(contacts, first_name, last_name):
     """
     Adds a new name to the 'contacts' list.
 
