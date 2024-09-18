@@ -36,5 +36,7 @@ while quit != True:
                 contacts = delete_contact(contacts, index)
         elif choice == 5:
                 contacts = sort_contacts(contacts, 0)
+        elif choice == 6:
+                
         elif choice == 7:
                 quit = True
