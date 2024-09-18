@@ -95,7 +95,7 @@ def modify_contact(contacts, first_name, last_name, index):
         return False
     return contacts
 
-def delete_contact(contacts):
+def delete_contact(contacts, index):
     """
     Deletes element at the desired index from 'contacts'.
 
