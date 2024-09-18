@@ -115,6 +115,7 @@ def delete_contact(contacts, index):
     """
     if index >= 0 and index < len(contacts):
         del contacts[index]
+        return contacts
     else:
         print("Invalid index number.")
         return False
