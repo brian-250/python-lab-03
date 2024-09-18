@@ -123,3 +123,6 @@ def delete_contact(contacts, index):
         print("Invalid index number.")
         return False
     return contacts
+
+def sort_contacts():
+    
