@@ -29,6 +29,7 @@ while quit != True:
         elif choice == 3:
                 first_name = input("Input a new first name: ")
                 last_name = input("Input a new last name: ")
+                index = input("Input the index of the element in the contacts list to modify: ")
                 contacts = modify_contact(contacts, first_name, last_name, index)
         elif choice == 4:
                 contacts = delete_contact(contacts)
