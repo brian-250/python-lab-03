@@ -32,6 +32,7 @@ while quit != True:
                 index = input("Input the index of the element in the contacts list to modify: ")
                 contacts = modify_contact(contacts, first_name, last_name, index)
         elif choice == 4:
+                index = input("Input the index of the element in the contacts list to delete: ")
                 contacts = delete_contact(contacts, index)
         elif choice == 5:
                 quit = True
