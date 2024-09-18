@@ -100,7 +100,10 @@ def delete_contact(contacts, index):
     Deletes element at the desired index from 'contacts'.
 
     Paramters:
-    contacts (2D list): Tuffy Titan's contacts list.
+    contacts (2D list, int): Tuffy Titan's contacts list.
+    index (2D lists, int): The value that helps us identify
+                           the element to remove from the
+                           'contacts' list.
 
     Statements:
     del:
@@ -110,7 +113,7 @@ def delete_contact(contacts, index):
         2D list: Updated 'contacts' list.
 
     Example:
-    >>> delete_contact(contacts)
+    >>> delete_contact(contacts, index)
     contacts
     """
     if index >= 0 and index < len(contacts):
