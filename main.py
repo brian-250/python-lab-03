@@ -23,7 +23,7 @@ while quit != True:
         if choice == 1:
                 contacts = print_list(contacts)
         elif choice == 2:
-                contacts = add_contact(contacts)
+                contacts = add_contact(contacts, first_name, last_name)
         elif choice == 3:
                 contacts = modify_contact(contacts)
         elif choice == 4:
