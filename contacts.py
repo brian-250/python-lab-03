@@ -62,7 +62,11 @@ def modify_contact(contacts, first_name, last_name, index):
     Modifys the first and last name of an index in 'contacts'.
 
     Paramters:
-    contacts (2D list): Tuffy Titan's contacts list.
+    contacts (2D list, string, string): Tuffy Titan's contacts list.
+    first_name (string, string, string): The first name of the person added to
+                                         'contacts' list
+    last_name (string, string, string): The last name of the person added to
+                                         'contacts' list
 
     Methods:
     append():
