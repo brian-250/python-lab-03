@@ -124,5 +124,5 @@ def delete_contact(contacts, index):
         return False
     return contacts
 
-def sort_contacts():
+def sort_contacts(contacts, column):
     
