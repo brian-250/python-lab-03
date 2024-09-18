@@ -15,7 +15,9 @@ while quit != True:
              2. Add contact
              3. Modify contact
              4. Delete contact
-             5. Exit the program""")
+             5. Sort list by first name
+             6. Sort list by last name
+             7. Exit the program""")
         choice = int(input("Enter menu choice: "))
 
         if choice == 1:
