@@ -29,10 +29,10 @@ while quit != True:
         elif choice == 3:
                 first_name = input("Input a new first name: ")
                 last_name = input("Input a new last name: ")
-                index = input("Input the index of the element in the contacts list to modify: ")
+                index = int(input("Input the index of the element in the contacts list to modify: "))
                 contacts = modify_contact(contacts, first_name, last_name, index)
         elif choice == 4:
-                index = input("Input the index of the element in the contacts list to delete: ")
+                index = initinput("Input the index of the element in the contacts list to delete: ")
                 contacts = delete_contact(contacts, index)
         elif choice == 5:
                 contacts = sort_contacts(contacts, 0)
