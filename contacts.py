@@ -87,6 +87,7 @@ def modify_contact(contacts, first_name, last_name, index):
         contacts[index] = full_name
     else:
         print("Invalid index number.")
+        return False
     return contacts
 
 def delete_contact(contacts):
