@@ -28,6 +28,7 @@ while quit != True:
                 contacts = add_contact(contacts, first_name, last_name)
         elif choice == 3:
                 first_name = input("Input a new first name: ")
+                last_name = input("Input a new last name: ")
                 contacts = modify_contact(contacts, first_name, last_name, index)
         elif choice == 4:
                 contacts = delete_contact(contacts)
