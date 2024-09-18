@@ -113,7 +113,6 @@ def delete_contact(contacts, index):
     >>> delete_contact(contacts)
     contacts
     """
-    index = int(input("What index do you want to delete? "))
     if index >= 0 and index < len(contacts):
         del contacts[index]
     else:
