@@ -25,12 +25,16 @@ def print_list(contacts):
         print(f'{str(index):8}{contacts[index][0]:22}{contacts[index][1]:22}')
     return contacts
 
-def add_contact(contacts):
+def add_contact(contacts, first_name, last_name):
     """
     Adds a new name to the 'contacts' list.
 
     Paramters:
-    contacts (2D list): Tuffy Titan's contacts list.
+    contacts (2D list, string, string): Tuffy Titan's contacts list.
+    first_name (string, string, string): The first name of the person added to
+                                         'contacts' list
+    last_name (string, string, string): The last name of the person added to
+                                         'contacts' list
 
     Methods:
     append():
@@ -44,30 +48,32 @@ def add_contact(contacts):
         2D list: Updated 'contacts' list.
 
     Example:
-    >>> add_contact(contacts)
+    >>> add_contact(contacts, first_name, last_name)
     contacts
     """
-    first_name = input("Provide your first name: ")
-    last_name = input("Provide your last name: ")
     full_name = []
     full_name.append(first_name)
     full_name.append(last_name)
     contacts.append(full_name)
     return contacts
 
-def modify_contact(contacts):
+def modify_contact(contacts, first_name, last_name, index):
     """
     Modifys the first and last name of an index in 'contacts'.
 
     Paramters:
-    contacts (2D list): Tuffy Titan's contacts list.
+    contacts (2D list, string, string): Tuffy Titan's contacts list.
+    first_name (string, string, string): The first name of the person added to
+                                         'contacts' list
+    last_name (string, string, string): The last name of the person added to
+                                         'contacts' list
 
     Methods:
     append():
         Appends 'first_name' to the 'full_name' list.
     append():
         Appends 'last_name' to the 'full_name' list.
-    append():
+    []:
         Modifys 'contacts' list with the 'full_name' list at the
         specified index,'index_modifier'.
 
@@ -75,27 +81,29 @@ def modify_contact(contacts):
         2D list: Updated 'contacts' list.
 
     Example:
-    >>> modify_contact(contacts)
+    >>> modify_contact(contacts, first_name, last_name)
     contacts
     """
-    index_modifier = int(input("What index do you want to modify? "))
-    if index_modifier >= 0 and index_modifier < len(contacts):
-        first_name = input("Provide your first name: ")
-        last_name = input("Provide your last name: ")
+    if index >= 0 and index < len(contacts):
         full_name = []
         full_name.append(first_name)
         full_name.append(last_name)
-        contacts[index_modifier] = full_name
+        contacts[index] = full_name
+        return contacts
     else:
         print("Invalid index number.")
+        return False
     return contacts
 
-def delete_contact(contacts):
+def delete_contact(contacts, index):
     """
     Deletes element at the desired index from 'contacts'.
 
     Paramters:
-    contacts (2D list): Tuffy Titan's contacts list.
+    contacts (2D list, int): Tuffy Titan's contacts list.
+    index (2D lists, int): The value that helps us identify
+                           the element to remove from the
+                           'contacts' list.
 
     Statements:
     del:
@@ -105,12 +113,20 @@ def delete_contact(contacts):
         2D list: Updated 'contacts' list.
 
     Example:
-    >>> delete_contact(contacts)
+    >>> delete_contact(contacts, index)
     contacts
     """
-    index_modifier = int(input("What index do you want to delete? "))
-    if index_modifier >= 0 and index_modifier < len(contacts):
-        del contacts[index_modifier]
+    if index >= 0 and index < len(contacts):
+        del contacts[index]
+        return contacts
     else:
         print("Invalid index number.")
+        return False
+    return contacts
+
+def sort_contacts(contacts, column):
+    if column == 0:
+        contacts.sort(key=lambda x: x[0])
+    elif column == 1:
+        contacts.sort(key=lambda x: x[1])
     return contacts
