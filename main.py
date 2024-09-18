@@ -24,6 +24,7 @@ while quit != True:
                 contacts = print_list(contacts)
         elif choice == 2:
                 first_name = input("Input a first name: ")
+                last_name = input("Input a last name: ")
                 contacts = add_contact(contacts, first_name, last_name)
         elif choice == 3:
                 contacts = modify_contact(contacts)
