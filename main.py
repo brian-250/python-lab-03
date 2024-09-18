@@ -35,6 +35,6 @@ while quit != True:
                 index = input("Input the index of the element in the contacts list to delete: ")
                 contacts = delete_contact(contacts, index)
         elif choice == 5:
-                
+                contacts = sort_contacts(contacts, 0)
         elif choice == 7:
                 quit = True
