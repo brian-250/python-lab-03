@@ -73,7 +73,7 @@ def modify_contact(contacts, first_name, last_name, index):
         Appends 'first_name' to the 'full_name' list.
     append():
         Appends 'last_name' to the 'full_name' list.
-    append():
+    []:
         Modifys 'contacts' list with the 'full_name' list at the
         specified index,'index_modifier'.
 
@@ -81,7 +81,7 @@ def modify_contact(contacts, first_name, last_name, index):
         2D list: Updated 'contacts' list.
 
     Example:
-    >>> modify_contact(contacts)
+    >>> modify_contact(contacts, first_name, last_name)
     contacts
     """
     if index >= 0 and index < len(contacts):
